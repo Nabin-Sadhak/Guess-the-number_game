@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#feedback {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#attempts, #score, #timer {
+  font-size: 16px;
+  color: #555;
+}
+
+#restartGame {
+  background-color: #f44336;
+}
+
+#restartGame:hover {
+  background-color: #e53935;
+}
+
+/* Animation for correct guess */
+@keyframes victory {
+  0% { transform: scale(1); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+.victory {
+  animation: victory 1.5s ease-in-out;
+  color: green;
+  font-weight: bold;
+}
