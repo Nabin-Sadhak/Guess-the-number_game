@@ -10,3 +10,6 @@ This is a fun and simple game where the user has to guess a number between 1 and
 
 Good luck!
 
+
+## Play the Game Online
+You can play the game here: [Guess the Number Game](https://nabin-sadhak.github.io/Guess-the-number_game/)
